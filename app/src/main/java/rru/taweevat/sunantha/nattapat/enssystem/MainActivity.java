@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         objManageTABLE.addUser("user","pass","name","Sur","male","123456","abc@gmail.com");
         objManageTABLE.addNews("title" ,"detail" , "video" , "photo" , "day_news", "user_admin");
+        objManageTABLE.addCall("Name Call" ,"123456" );
     }
 
     private void synJSONtoSQLite() {
