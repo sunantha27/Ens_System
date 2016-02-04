@@ -67,10 +67,11 @@ public class MainActivity extends AppCompatActivity {
         StrictMode.setThreadPolicy(myPolicy);
 
         int intTABLE = 1;     //intTABLE ==>amount of Table
-        while (intTABLE <=2) {
+        while (intTABLE <=3) {
 
             String strURLuser = "http://swiftcodingthai.com/ens/php_get_user_aom.php";
             String strURLnews = "http://swiftcodingthai.com/ens/php_get_news_aom.php";
+            String strURLcall = "http://swiftcodingthai.com/ens/php_get_call.php";
 
             //1.Create InputStream
 
