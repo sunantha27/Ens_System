@@ -48,7 +48,8 @@
                 android:id="@+id/textView9"
                 android:layout_weight="1"
                 android:textColor="@color/text"
-                android:gravity="center_horizontal" />
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/h2" />
 
             <TextView
                 android:layout_width="0dp"
@@ -57,7 +58,8 @@
                 android:id="@+id/textView10"
                 android:layout_weight="1"
                 android:textColor="@color/text"
-                android:gravity="center_horizontal" />
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/h2" />
         </LinearLayout>
 
         <LinearLayout
@@ -92,7 +94,8 @@
                 android:id="@+id/textView11"
                 android:layout_weight="1"
                 android:textColor="@color/text"
-                android:gravity="center_horizontal" />
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/h2" />
 
             <TextView
                 android:layout_width="0dp"
@@ -101,7 +104,8 @@
                 android:id="@+id/textView12"
                 android:layout_weight="1"
                 android:textColor="@color/text"
-                android:gravity="center_horizontal" />
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/h2" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,7 +132,8 @@
                 android:text="Call"
                 android:id="@+id/textView13"
                 android:textColor="@color/text"
-                android:gravity="center_horizontal" />
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/h2" />
         </LinearLayout>
 
     </LinearLayout>
@@ -144,6 +149,7 @@
         <ImageView
             android:layout_width="@dimen/flat"
             android:layout_height="@dimen/flat"
+            android:onClick="clickTHAI"
             android:id="@+id/imageView5"
             android:src="@drawable/thai"
             android:layout_marginRight="10dp" />
@@ -151,6 +157,7 @@
         <ImageView
             android:layout_width="@dimen/flat"
             android:layout_height="@dimen/flat"
+            android:onClick="clickENG"
             android:id="@+id/imageView8"
             android:src="@drawable/eng"
             android:layout_marginRight="10dp" />

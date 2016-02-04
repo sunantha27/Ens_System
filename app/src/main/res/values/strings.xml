@@ -23,7 +23,17 @@
     <string name="phonebox">Phone Number</string>
     <string name="emailbox">E-Mail</string>
 
+    <string name="en_inform">Informl</string>
+    <string name="en_news">News</string>
+    <string name="en_search">Search</string>
+    <string name="en_statistic">Statistic</string>
+    <string name="en_call">Call</string>
 
+    <string name="th_inform">แจ้งเหตุฉุกเฉิน</string>
+    <string name="th_news">ข่าว</string>
+    <string name="th_search">ค้นหา</string>
+    <string name="th_statistic">สถิต</string>
+    <string name="th_call">เบอร์ฉุกเฉิน</string>
 
 
 </resources>
