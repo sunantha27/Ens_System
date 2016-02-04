@@ -44,7 +44,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="clickSignIN"
+            android:onClick="clickSignIn"
             android:text="@string/signin"
             android:id="@+id/button"
             android:layout_weight="1" />
