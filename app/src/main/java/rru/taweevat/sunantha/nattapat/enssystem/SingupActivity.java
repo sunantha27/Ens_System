@@ -116,10 +116,24 @@ public class SingupActivity extends AppCompatActivity {
 
         } else {
         }   //No Space
-        confirmSignUp();
+        //confirmSignUp();
+
+        CheckUser ();
 
 
     }//clickSignUpSave
+
+    private void CheckUser() {
+        ManageTABLE objManageTABLE = new ManageTABLE(this);
+        try {
+           String [] resultStrings = objManageTABLE.searchUser(userString);
+            MyAlertDialog objMyAlertDialog = new MyAlertDialog();
+            objMyAlertDialog.MyDialog(SingupActivity.this, R.drawable.icon_question,
+                    "User ซ้ำ", "User" + resultStrings [1] + "ซ้ำ โปรดเปลี่ยน User ใหม่ ?");
+
+        } catch (Exception e){
+        } confirmSignUp();
+    }
 
     private void confirmSignUp() {
 
