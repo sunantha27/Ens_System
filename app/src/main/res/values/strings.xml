@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ENS System</string>
+
+    <!--Biw-->
+    <string name="user">User :</string>
+    <string name="pass">Password :</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sing Up</string>
+    <!--Kao-->
+    <string name="username">ชื่อผู้ใช้ :</string>
+    <string name="password">รหัสผ่าน :</string>
+    <string name="name">ชื่อ :</string>
+    <string name="surname">นามสกุล :</string>
+    <string name="gender">เพศ :</string>
+    <string name="phone">เบอร์โทรศัพท์ :</string>
+    <string name="email">อีเมล :</string>
+    <string name="female">หญิง</string>
+    <string name="male">ชาย</string>
+    <string name="userpass">Username</string>
+    <string name="passseting">ใส่ 6 ตัวอักษร</string>
+    <string name="namebox">Name</string>
+    <string name="surnamebox">Surname</string>
+    <string name="phonebox">Phone Number</string>
+    <string name="emailbox">E-Mail</string>
+
+
+
+
+</resources>

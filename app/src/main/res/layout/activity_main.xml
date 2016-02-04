@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rru.taweevat.sunantha.nattapat.enssystem.MainActivity"
+    android:background="@drawable/wall">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo200"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="@dimen/edittext"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="@string/user" />
+
+        <EditText
+            android:layout_width="@dimen/edittext"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:hint="@string/pass"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickSignIN"
+            android:text="@string/signin"
+            android:id="@+id/button"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickSignUp"
+            android:text="@string/signup"
+            android:id="@+id/button2"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>
