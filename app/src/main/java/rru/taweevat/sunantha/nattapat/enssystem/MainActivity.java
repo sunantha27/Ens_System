@@ -1,5 +1,7 @@
 package rru.taweevat.sunantha.nattapat.enssystem;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -232,6 +234,8 @@ public class MainActivity extends AppCompatActivity {
             if(passwordString.equals(resultStrings[2])) {
 
                 //Password True
+                Welcome (resultStrings [3] , resultStrings[4] , resultStrings [0]);
+
             } else {
 
                 //Password False
@@ -246,6 +250,27 @@ public class MainActivity extends AppCompatActivity {
             objMyAlertDialog.MyDialog(MainActivity.this, R.drawable.icon_question, "No This User",
                     "ไม่มี" + userString + "ในฐานข้อมูลของเรา");
         }
+    }
+
+    private void Welcome(String strName, String strSurname , final String strID) {
+
+        final AlertDialog.Builder objBuilder = new AlertDialog.Builder(this);
+        objBuilder.setIcon(R.drawable.icon_question);
+        objBuilder.setTitle("Welcome");
+        objBuilder.setMessage("ยินดีต้อนรับ" + strName + " " + strSurname + "\n" + "สู่ระบบของเรา");
+        objBuilder.setCancelable(false);
+        objBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+                Intent objIntent = new Intent(MainActivity.this, HubActivity.class);
+                objIntent.putExtra("ID" , strID);
+                startActivity(objIntent);
+                finish();
+            }//event
+        });
+        objBuilder.show();
+
     }
 
 
