@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         //Request Database
         objManageTABLE = new ManageTABLE(this);
 
+
+
         //Test Add Value
         testAddValue ();
 
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private void testAddValue() {
 
         objManageTABLE.addUser("user","pass","name","Sur","male","123456","abc@gmail.com");
+        objManageTABLE.addNews("title" ,"detail" , "video" , "photo" , "day_news", "user_admin");
     }
 
     private void synJSONtoSQLite() {
