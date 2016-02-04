@@ -3,10 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".HubActivity"
     android:background="@drawable/wall">
 
@@ -14,11 +10,13 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="false"
+        android:layout_above="@+id/linbottom">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/height"
             android:orientation="horizontal">
 
             <ImageView
@@ -64,7 +62,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/height"
             android:orientation="horizontal">
 
             <ImageView
@@ -108,7 +106,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/height"
             android:orientation="horizontal">
 
             <ImageView
@@ -133,6 +131,29 @@
                 android:gravity="center_horizontal" />
         </LinearLayout>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linbottom"
+        android:gravity="right">
+
+        <ImageView
+            android:layout_width="@dimen/flat"
+            android:layout_height="@dimen/flat"
+            android:id="@+id/imageView5"
+            android:src="@drawable/thai"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="@dimen/flat"
+            android:layout_height="@dimen/flat"
+            android:id="@+id/imageView8"
+            android:src="@drawable/eng"
+            android:layout_marginRight="10dp" />
     </LinearLayout>
 
 </RelativeLayout>
