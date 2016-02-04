@@ -1,6 +1,7 @@
 package rru.taweevat.sunantha.nattapat.enssystem;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,7 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Test Add Value
-        testAddValue ();
+        //testAddValue ();
+
+        //Delete All data
+        deleteAllData();
 
 
         //Synchronize JSON to SQLite
@@ -37,6 +41,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     } //Main Method
+
+    private void deleteAllData() {
+
+        SQLiteDatabase objSqlSqLiteDatabase = openOrCreateDatabase(MyOpenHelper.DABATASE_NAME,
+                MODE_PRIVATE ,null);
+        objSqlSqLiteDatabase.delete(ManageTABLE.TABLE_callTABLE,null,null);
+        objSqlSqLiteDatabase.delete(ManageTABLE.TABLE_newsTABLE ,null,null);
+        objSqlSqLiteDatabase.delete(ManageTABLE.TABLE_userTABLE ,null,null);
+
+    }//deleteAllData
 
     private void testAddValue() {
 
