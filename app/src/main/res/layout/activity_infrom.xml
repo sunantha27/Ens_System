@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="rru.taweevat.sunantha.nattapat.enssystem.InfromActivity">
+    tools:context="rru.taweevat.sunantha.nattapat.enssystem.InfromActivity"
+    android:background="@drawable/wall">
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,13 +69,27 @@
                     android:inputType="text" />
             </LinearLayout>
 
-            <EditText
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:inputType="textMultiLine"
-                android:ems="10"
-                android:id="@+id/editText11"
-                android:hint="Detail" />
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ประเภทเหตุการณ์ :"
+                    android:id="@+id/textView17"
+                    android:layout_weight="1"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/h2" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -84,12 +99,22 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="รายละเอียดเหตุการณ์"
+                    android:text="รายละเอียดเหตุการณ์ :"
                     android:id="@+id/textView15"
                     android:textSize="@dimen/h2"
                     android:layout_weight="1"
                     android:textColor="@color/text" />
             </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/editText11"
+                android:hint="Detail"
+                android:lines="3"
+                android:gravity="top" />
 
             <LinearLayout
                 android:orientation="horizontal"
